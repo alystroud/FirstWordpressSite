@@ -7,11 +7,14 @@
       <?php
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
         get_template_part( 'content', get_post_format() );
-      endwhile;
-      the_posts_pagination( array(
-        'prev_text' => __( 'Previous page' ),
-        'next_text' => __( 'Next page' ),
-      ) );
+      endwhile; ?>
+      <nav>
+        <ul class="pager">
+          <li><?php next_posts_link( 'Previous' ); ?></li>
+          <li><?php previous_posts_link( 'Next' ); ?></li>
+        </ul>
+      </nav>
+      <?php
       endif;
 			?>
 
