@@ -6,10 +6,13 @@
 
       <?php
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
-
-				get_template_part( 'content', get_post_format() );
-
-			endwhile; endif;
+        get_template_part( 'content', get_post_format() );
+      endwhile;
+      the_posts_pagination( array(
+        'prev_text' => __( 'Previous page' ),
+        'next_text' => __( 'Next page' ),
+      ) );
+      endif;
 			?>
 
 		</div> <!-- /.blog-main -->
