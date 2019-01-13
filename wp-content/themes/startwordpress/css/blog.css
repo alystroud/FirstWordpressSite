@@ -26,7 +26,7 @@ a {
 a:hover {
   color: #990033;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 
@@ -49,13 +49,15 @@ a:hover {
   border-top:1px solid #333;
   border-bottom:1px solid #333;
   background-color: #fff;
+  float: none;
+  margin: 0 auto;
   /*-webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);*/
 }
 
 .col-centered {
-    float:none;
-    margin: 0 auto;
+  float:none;
+  margin: 0 auto;
 }
 
 /* Nav links */
@@ -63,7 +65,7 @@ a:hover {
   position: relative;
   display: inline-block;
   padding: 10px;
-  font-weight: 500;
+  font-weight: 300;
   color: #990033;
 }
 .blog-nav-item:hover,
@@ -76,6 +78,7 @@ a:hover {
 .blog-nav .active {
   color: #666;
   background-color: #eee;
+  font-weight: 300;
 }
 .blog-nav .active:after {
   position: absolute;
@@ -91,7 +94,7 @@ a:hover {
   border-left: 5px solid transparent;
 }
 .blog-nav li {
-    position: relative;
+    /*position: relative;*/
     display: inline-block;
     padding: 10px;
     font-weight: 200;
@@ -195,4 +198,18 @@ a:hover {
 
 .blog-footer a{
   color: #990033;
+}
+
+.comment-list li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border:
+}
+
+.aligncenter,
+div.aligncenter {
+	display: block;
+    margin: 0px auto 0px auto;
 }
