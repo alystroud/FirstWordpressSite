@@ -14,8 +14,8 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-family: 'Abel', sans-serif;
+  font-weight: 100;
   color: #666;
 }
 
@@ -46,18 +46,12 @@ a:hover {
  */
 
 .blog-masthead {
-  border-top:1px solid #333;
-  border-bottom:1px solid #333;
-  background-color: #fff;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e5e5e5;
   float: none;
   margin: 0 auto;
   /*-webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);*/
-}
-
-.col-centered {
-  float:none;
-  margin: 0 auto;
 }
 
 /* Nav links */
