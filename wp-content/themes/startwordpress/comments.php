@@ -2,10 +2,11 @@
 	return;
 } ?>
 	<div id="comments" class="comments-area">
+		<?php comment_form(); ?>
 		<?php if ( have_comments() ) : ?>
 			<h4 class="comments-title">
 				<?php
-				printf( _nx( 'One comment on “%2$s”', '%1$s comments on “%2$s”', get_comments_number(), 'comments title'),
+				printf( _nx( '1 Comment', '%1$s Comments', get_comments_number(), 'comments title'),
 					number_format_i18n( get_comments_number() ), get_the_title() );
 				?>
 			</h4>
@@ -23,5 +24,4 @@
 				<?php _e( 'No comments yet.' ); ?>
 			</p>
 		<?php endif; ?>
-		<?php comment_form(); ?>
 	</div>
