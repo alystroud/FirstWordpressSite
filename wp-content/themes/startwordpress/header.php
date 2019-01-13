@@ -20,7 +20,7 @@
 				</div>
 				<div class="col-sm-4">
 					<nav class="blog-nav">
-						<a class="blog-nav-item active" href="#">Home</a>
+						<a class="blog-nav-item active" href="#">Blog</a>
 						<?php wp_list_pages( '&title_li=' ); ?>
 					</nav>
 				</div>

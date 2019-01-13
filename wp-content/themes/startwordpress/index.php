@@ -10,8 +10,8 @@
       endwhile; ?>
       <nav>
         <ul class="pager">
-          <li><?php next_posts_link( 'Previous' ); ?></li>
-          <li><?php previous_posts_link( 'Next' ); ?></li>
+          <li><?php next_posts_link( 'Older Posts' ); ?></li>
+          <li><?php previous_posts_link( 'Newer Posts' ); ?></li>
         </ul>
       </nav>
       <?php
