@@ -2,7 +2,7 @@
 	return;
 } ?>
 	<div id="comments" class="comments-area">
-		<?php comment_form(); ?>
+		<?php comment_form(array('title_reply'=>'Leave Me A Comment:')); ?>
 		<?php if ( have_comments() ) : ?>
 			<h4 class="comments-title">
 				<?php
